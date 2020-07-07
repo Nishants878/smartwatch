@@ -1,0 +1,170 @@
+body{
+    margin:0px;
+   font-family: 'Poppins', sans-serif;
+  }
+#logo{
+    width: 403px;
+  }
+#head{
+    height:100px;
+    background-color:salmon;
+    background-image: linear-gradient(0deg, #00b0b9 0, #008eaa 100%);
+    display: flex;
+    justify-content: center;
+  }
+#watch{
+    height: 500px;
+}
+#watch-wrapper{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+#clock{
+    font-size:30px;
+    font-weight: bold;
+    position: absolute;
+    top:14rem;
+    left:11.8rem;
+    color: white;
+}
+#rate{
+    position: absolute;
+    top:12rem;
+    left:13.7rem;
+    color:#fff;
+    z-index: 1;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+#rate>p{
+    margin-top: 5px;
+}
+#rate>i{
+    color:red;
+    font-size: 50px;
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+@keyframes heartbeat {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1.2);
+    }
+}
+#item-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#desc-wrapper{
+    box-sizing: border-box;
+    width:50%;
+    padding-right: 2%;  
+    font-weight: 400;
+}
+#desc-wrapper>h1{
+    font-weight: 1000;
+}
+#desc-wrapper>h2{
+    font-weight: 700;
+}
+#black{
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    outline: none;
+}
+#purple{
+    background-color:  #8a5362;
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-right: 10px;
+    outline: none;
+}
+#red{
+    background-color: #ca3d22;
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-right: 10px;
+    outline: none;
+}
+#blue{
+    background-color: #565681;
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-right: 10px;
+    outline: none;
+}
+#pink{
+    background-color: #e9c7be;
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    outline: none;
+}
+.button{
+    background-color: #D3D3D3;
+    height: 50px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    color:black;
+    font-size: 17px;
+    font-weight: 550;
+    margin-right: 10px;
+    outline: none;
+}
+#buy{
+    
+    background-image: linear-gradient(0deg, #00b0b9 0, #008eaa 100%);
+    height: 50px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    color:black;
+    font-size: 17px;
+    font-weight: 550;
+    margin-right: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+#buy:hover{
+    background-image: linear-gradient(180deg, #00b0b9 0, #008eaa 100%);
+}
+
+.colorChange{
+    animation: colorchangethegardencafe 1s infinite;
+}
+@keyframes colorchangethegardencafe{
+    0%{color:#ffffff;}
+    25%{color: #e5e5e5;}
+    50%{color: #cccccc;}
+    100%{color: #999999;}
+
+}
+
+
